@@ -68,6 +68,7 @@ export const ImageAndTextHorizontal = ({
                     >
                         <Image
                             src={image}
+                            loader={()=> image + Date.now()}
                             alt='image'
                             fill
                             className='object-cover h-full'
